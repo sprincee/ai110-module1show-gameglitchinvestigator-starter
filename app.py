@@ -7,7 +7,7 @@ def get_range_for_difficulty(difficulty: str):
     if difficulty == "Normal":
         return 1, 100
     if difficulty == "Hard":
-        return 1, 50
+        return 1, 50 # FIXME: Range of 1-50 is actually easier than Normal (1-100), Hard should have a wider range
     return 1, 100
 
 
@@ -93,7 +93,7 @@ if "secret" not in st.session_state:
     st.session_state.secret = random.randint(low, high)
 
 if "attempts" not in st.session_state:
-    st.session_state.attempts = 1
+    st.session_state.attempts = 1 # FIXME: Should initialize to 0; starting at 1 causes off-by-one, giving one fewer attempt than intended
 
 if "score" not in st.session_state:
     st.session_state.score = 0
@@ -156,7 +156,7 @@ if submit:
         st.session_state.history.append(guess_int)
 
         if st.session_state.attempts % 2 == 0:
-            secret = str(st.session_state.secret)
+            secret = str(st.session_state.secret) # FIXME: Converting secret to string on even attempts causes incorrect string comparison in check_guess, breaking Go Higher/Go Lower hints
         else:
             secret = st.session_state.secret
 
