@@ -38,9 +38,14 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 ## 3. Debugging and testing your fixes
 
 - How did you decide whether a bug was really fixed?
-- Describe at least one test you ran (manual or using pytest)  
-  and what it showed you about your code.
+
+  I tested the game manually after each fix and made sure the behavior matched what I expected. I also ran python app.py to confirm all 3       tests passed.
+- Describe at least one test you ran (manual or using pytest) and what it showed you about your code.
+
+  I ran test_check_guess_no_string_conversion() which tested check_guess(99, 4) and checked it returned "Too High". It confirmed the secret     was no longer being cast to a string and breaking the comparison.
 - Did AI help you design or understand any tests? How?
+
+  Yeah, Claude suggested using check_guess(99, 4) as the test case since those values clearly expose the string comparison bug. It also         explained why the bug happened which helped me actually understand what I was testing.
 
 ---
 
