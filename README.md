@@ -26,12 +26,30 @@ It wrote the code, ran away, and now the game is unplayable.
 ## 📝 Document Your Experience
 
 - [ ] Describe the game's purpose.
+
+   A number guessing game where you try to guess a secret number within a limited number of attempts. Each guess gives you a hint to go higher or lower.
 - [ ] Detail which bugs you found.
+
+   Hints were backwards — "Go Higher" and "Go Lower" messages were swapped
+
+   On even attempts, the secret was converted to a string causing incorrect comparisons (e.g. 99 < "4" lexicographically)
+
+   Attempts initialized at 1 instead of 0, giving one fewer attempt than intended
+
+   Hard difficulty had a range of 1-50, which is actually easier than Normal (1-100)
 - [ ] Explain what fixes you applied.
+
+   Swapped the "Go Higher" and "Go Lower" messages in check_guess
+
+   Removed the string conversion so the secret is always compared as an integer
+
+   Changed attempts initialization from 1 to 0
+   
+   Widened Hard difficulty range from 1-50 to 1-200
 
 ## 📸 Demo
 
-- [ ] [Insert a screenshot of your fixed, winning game here]
+- [ ] ![alt text](image.png)
 
 ## 🚀 Stretch Features
 
