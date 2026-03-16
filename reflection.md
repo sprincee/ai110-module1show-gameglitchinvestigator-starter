@@ -23,8 +23,15 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 ## 2. How did you use AI as a teammate?
 
 - Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
+
+  I used Claude for this project.
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
+
+  Using AI as a 'pair programmer' I asked it what may be wrong with the game. It suggested to look closely at the bounds for my guesses.
+  It led me to finding the glitch with '99' being too low, '100' being too high, yet '4' being the answer.
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
+
+  The AI told me to look at front-end bugs, but, seeing as that I cannot edit that for this assignment, I did not listen to the AI. It did      mislead me though, enough to ask a TF about front-end bug considerations.
 
 ---
 
