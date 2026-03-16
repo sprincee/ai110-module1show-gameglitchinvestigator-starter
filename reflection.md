@@ -44,6 +44,7 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 
   I ran test_check_guess_no_string_conversion() which tested check_guess(99, 4) and checked it returned "Too High". It confirmed the secret     was no longer being cast to a string and breaking the comparison.
 - Did AI help you design or understand any tests? How?
+
   Yeah, Claude suggested using check_guess(99, 4) as the test case since those values clearly expose the string comparison bug. It also         explained why the bug happened which helped me actually understand what I was testing.
 
 ---
