@@ -9,6 +9,7 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
   Yet, I quickly ran into bugs.
 - List at least two concrete bugs you noticed at the start  
   (for example: "the hints were backwards").
+
   The hints were off: '99' was given a 'Go Higher' Hint, 
   yet '100' was given a 'Go Lower' hint.
 
