@@ -34,7 +34,7 @@ def check_guess(guess, secret):
 
     try:
         if guess > secret:
-            return "Too High", "📈 Go LOWER!"
+            return "Too High", "📈 Go LOWER!"  # FIX: Swapped hint messages - 'Go LOWER' and 'Go HIGHER' were reversed, causing misleading feedback to the player (AI helped identify the swapped strings)
         else:
             return "Too Low", "📉 Go HIGHER!"
     except TypeError:
