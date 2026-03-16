@@ -5,6 +5,7 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 ## 1. What was broken when you started?
 
 - What did the game look like the first time you ran it?
+
   The game seemed normal, as if it wer fully functional.
   Yet, I quickly ran into bugs.
 - List at least two concrete bugs you noticed at the start  
